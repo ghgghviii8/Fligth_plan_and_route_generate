@@ -1,2 +1,16 @@
-# Fligth_plan_and_route_generate
-Python (tkinter) GUI for drone flight planning. Scrollable window with sections: polygon input (coordinates/KML import), rectangle from centre, wind/weather, parameters (spacing, altitude, speed), convex hull, safety/airspace check, weather check, and export (KMZ+PDF). Route: lawnmower pattern with 90° turns and configurable extensions.
+# Drone Flight Plan GUI
+
+Generates KMZ (DJI waypoints with turns) + PDF flight plan.
+Methane measurement – DJI M400 – EU A1/A3 Open Category.
+
+## Requirements
+
+- Python 3.11
+- `fpdf2`
+- `pyproj`
+
+## Setup (Conda)
+
+```bash
+conda env create -f environment.yml
+conda activate flightplan
